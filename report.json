@@ -1,0 +1,81 @@
+{
+  "goal": "Alert only when the current checkout price changes",
+  "cases": [
+    {
+      "case": "unchanged",
+      "should_notify": false,
+      "raw_html_diff": false,
+      "visible_text_diff": false,
+      "structured_price_diff": false
+    },
+    {
+      "case": "footer_clock",
+      "should_notify": false,
+      "raw_html_diff": true,
+      "visible_text_diff": true,
+      "structured_price_diff": false
+    },
+    {
+      "case": "review_count",
+      "should_notify": false,
+      "raw_html_diff": true,
+      "visible_text_diff": true,
+      "structured_price_diff": false
+    },
+    {
+      "case": "css_refactor",
+      "should_notify": false,
+      "raw_html_diff": true,
+      "visible_text_diff": false,
+      "structured_price_diff": false
+    },
+    {
+      "case": "current_price",
+      "should_notify": true,
+      "raw_html_diff": true,
+      "visible_text_diff": true,
+      "structured_price_diff": true
+    },
+    {
+      "case": "crossed_out_price",
+      "should_notify": false,
+      "raw_html_diff": true,
+      "visible_text_diff": true,
+      "structured_price_diff": false
+    },
+    {
+      "case": "checkout_attribute",
+      "should_notify": true,
+      "raw_html_diff": true,
+      "visible_text_diff": false,
+      "structured_price_diff": true
+    },
+    {
+      "case": "promo_banner",
+      "should_notify": false,
+      "raw_html_diff": true,
+      "visible_text_diff": true,
+      "structured_price_diff": false
+    }
+  ],
+  "scores": {
+    "raw_html_diff": {
+      "true_positive": 2,
+      "false_positive": 5,
+      "false_negative": 0,
+      "true_negative": 1
+    },
+    "visible_text_diff": {
+      "true_positive": 1,
+      "false_positive": 4,
+      "false_negative": 1,
+      "true_negative": 2
+    },
+    "structured_price_diff": {
+      "true_positive": 2,
+      "false_positive": 0,
+      "false_negative": 0,
+      "true_negative": 6
+    }
+  }
+}

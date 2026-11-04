@@ -1,0 +1,10 @@
+[
+  {"name":"unchanged","notify":false,"before":"<main><h1>Notebook</h1><p id='current-price' data-cents='1999'>$19.99</p></main>","after":"<main><h1>Notebook</h1><p id='current-price' data-cents='1999'>$19.99</p></main>"},
+  {"name":"footer_clock","notify":false,"before":"<main><h1>Notebook</h1><p id='current-price' data-cents='1999'>$19.99</p></main><footer>Updated 09:00</footer>","after":"<main><h1>Notebook</h1><p id='current-price' data-cents='1999'>$19.99</p></main><footer>Updated 09:05</footer>"},
+  {"name":"review_count","notify":false,"before":"<main><h1>Notebook</h1><p id='current-price' data-cents='1999'>$19.99</p><p>38 reviews</p></main>","after":"<main><h1>Notebook</h1><p id='current-price' data-cents='1999'>$19.99</p><p>39 reviews</p></main>"},
+  {"name":"css_refactor","notify":false,"before":"<main class='card-v1'><h1>Notebook</h1><p id='current-price' data-cents='1999'>$19.99</p></main>","after":"<main class='card-v2'><h1>Notebook</h1><p id='current-price' data-cents='1999'>$19.99</p></main>"},
+  {"name":"current_price","notify":true,"before":"<main><h1>Notebook</h1><p id='current-price' data-cents='1999'>$19.99</p></main>","after":"<main><h1>Notebook</h1><p id='current-price' data-cents='2499'>$24.99</p></main>"},
+  {"name":"crossed_out_price","notify":false,"before":"<main><h1>Notebook</h1><s>Was $29.99</s><p id='current-price' data-cents='1999'>$19.99</p></main>","after":"<main><h1>Notebook</h1><s>Was $34.99</s><p id='current-price' data-cents='1999'>$19.99</p></main>"},
+  {"name":"checkout_attribute","notify":true,"before":"<main><h1>Notebook</h1><p id='current-price' data-cents='1999'>See price at checkout</p></main>","after":"<main><h1>Notebook</h1><p id='current-price' data-cents='2499'>See price at checkout</p></main>"},
+  {"name":"promo_banner","notify":false,"before":"<aside>Free delivery today</aside><main><h1>Notebook</h1><p id='current-price' data-cents='1999'>$19.99</p></main>","after":"<aside>Free delivery this week</aside><main><h1>Notebook</h1><p id='current-price' data-cents='1999'>$19.99</p></main>"}
+]
